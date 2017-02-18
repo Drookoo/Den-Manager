@@ -3,13 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 import json
 import time
-
-url = "http://livecount.hacknyu.org/"
-html = urlopen(url)
-
-soup = BeautifulSoup(html, "html.parser")
-
-current = int("".join(soup.find("div", {"id": "currentcount"}).strings))
+from datetime import datetime
 
 #Overcrowd          Max is 675
 Max = 675
@@ -28,8 +22,13 @@ newPC = int(oldPC) * .01
 
 #logging
 while True:
-    data = {
+    url = "http://livecount.hacknyu.org/"
+    html = urlopen(url)
+    soup = BeautifulSoup(html, "html.parser")
+    current = int("".join(soup.find("div", {"id": "currentcount"}).strings))
 
-    }
+    with open("data.txt", "a") as myfile:
+        myfile.write("TimeStamp: " + str(datetime.now().time())+"\t" + "Person Count:" + str(current) + "\n")
 
+    time.sleep(60)
 
