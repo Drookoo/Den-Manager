@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import plotly
-from plotly.graph_objs import *
+import plotly.graph_objs as go
 import plotly.plotly as py
 
 plotly.tools.set_credentials_file(
@@ -19,13 +19,23 @@ Nulines.pop(0)
 print(Nulines)
 
 text_file.close()
+Nulines = list(map(int,Nulines))
 
-#gaussian_numbers = np.random.randn(1000)
-#plt.hist(gaussian_numbers)
-#plt.title("Gaussian Histogram")
-#plt.xlabel("Value")
-#plt.ylabel("Frequency")
+s1 = [];
+number = 0
 
-#fig = plt.gcf()
+while number <= len(Nulines):
+    number = number + 1
+    s1.append(number)
 
-#plot_url = py.plot_mpl(fig, filename='mpl-basic-histogram')
+
+trace = go.Scatter(
+    x = s1,
+    y = Nulines,
+    mode = 'markers'
+)
+data = [trace]
+
+
+
+plot_url = py.plot(data, filename='basic-line')
