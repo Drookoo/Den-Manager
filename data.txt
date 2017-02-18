@@ -173,3 +173,15 @@ TimeStamp: 16:32:02.726672	Person Count:185
 TimeStamp: 16:33:02.886139	Person Count:182
 TimeStamp: 16:34:03.141599	Person Count:188
 TimeStamp: 16:35:03.276592	Person Count:189
+TimeStamp: 16:36:03.546797	Person Count:192
+TimeStamp: 16:37:03.875870	Person Count:191
+TimeStamp: 16:38:04.237147	Person Count:188
+TimeStamp: 16:39:04.626961	Person Count:187
+TimeStamp: 16:40:05.099473	Person Count:183
+TimeStamp: 16:41:05.453923	Person Count:183
+TimeStamp: 16:42:06.311458	Person Count:179
+TimeStamp: 16:43:06.826524	Person Count:182
+TimeStamp: 16:44:08.447619	Person Count:180
+TimeStamp: 16:45:08.830698	Person Count:179
+TimeStamp: 16:46:09.469936	Person Count:177
+TimeStamp: 16:47:09.766638	Person Count:179
