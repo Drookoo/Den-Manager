@@ -25,13 +25,6 @@ while True:
         myfile.write("TimeStamp: " + str(datetime.now().time())+"\t" + "Person Count:" + str(current) + "\n")
 
     if current > (Max * newPC):
-        server = smtplib.SMTP('smtp.gmail.com', 587)
-        server.starttls()
-        server.login("andrewku123@gmail.com", "nach0zombie")
-
-        msg = "Your venue is at " + oldPC + "% capacity"
-        server.sendmail("andrewku123@gmail.com", "andrewku123@gmail.com", msg)
-        server.quit()
 
         text_file = open("newhrs", "r")
         lines = text_file.read().split(':')
@@ -57,11 +50,11 @@ while True:
         y1 = Nulines[int(new1) - 1]
         y2 = Nulines[int(new2) - 1]
 
-
+        server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
         server.login("andrewku123@gmail.com", "nach0zombie")
 
-        msg = "your venue will close in" + str(y2 - y1) + " Minutes"
+        msg = "Your venue is at " + oldPC + "% capacity. Your venue will close in "+ str(y2 - y1) + " Minutes"
         server.sendmail("andrewku123@gmail.com", "andrewku123@gmail.com", msg)
         server.quit()
 
