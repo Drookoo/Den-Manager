@@ -31,4 +31,3 @@ while True:
         myfile.write("TimeStamp: " + str(datetime.now().time())+"\t" + "Person Count:" + str(current) + "\n")
     Binary = 0
     time.sleep(60)
-
