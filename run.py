@@ -26,7 +26,7 @@ while True:
     if current > (Max * newPC):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login("andrewku123@gmail.com", "pword")
+        server.login("andrewku123@gmail.com", "nach0zombie")
 
         msg = "Your venue is at " + oldPC + "% capacity"
         server.sendmail("andrewku123@gmail.com", "andrewku123@gmail.com", msg)
