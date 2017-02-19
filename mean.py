@@ -17,7 +17,7 @@ print(Nulines)
 text_file.close()
 Nulines = list(map(int,Nulines))
 
-print("Before length" + str(len(Nulines)))
+print("Before length " + str(len(Nulines)))
 
 loop2 = 0
 number = 0
