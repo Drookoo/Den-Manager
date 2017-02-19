@@ -27,7 +27,7 @@ while True:
     current = int("".join(soup.find("div", {"id": "currentcount"}).strings))
 
 
-    with open("13hrs", "a") as myfile:
+    with open("newhrs", "a") as myfile:
         myfile.write("TimeStamp: " + str(datetime.now().time())+"\t" + "Person Count:" + str(current) + "\n")
     Binary = 0
     time.sleep(60)

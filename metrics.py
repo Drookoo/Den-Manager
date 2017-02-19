@@ -8,7 +8,7 @@ plotly.tools.set_credentials_file(
             api_key='ajvmmn1scx'
         )
 
-text_file = open("13hrs.txt", "r")
+text_file = open("data.txt", "r")
 lines = text_file.read().split(':')
 newlines = [s for s in lines if len(s) > 3]
 newnewlines = [s for s in newlines if len(s) < 16]

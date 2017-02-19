@@ -1,3 +1,4 @@
+#mean
 import plotly
 import plotly.graph_objs as go
 import plotly.plotly as py
@@ -24,7 +25,7 @@ number = 0
 s1 = []
 s2 = []
 
-while loop2 <=13:
+while loop2 <=14:
     sumof30 = sum(Nulines[0:29])
     sumof30 = (sumof30) / 30
     s1.append(sumof30)
@@ -45,7 +46,7 @@ print("After length" + str(len(Nulines)))
 print(s1)
 
 trace = go.Bar(
-    x = ['1:30', '2:00','2:30','3:00', '3:30', '4:00', '4:30', '5:00', '5:30', '6:00', '6:30', '7:00', '7:30', '8:00'],
+    x = ['Midnight', '12:30am','1:00am','1:30am', '2:00am', '2:30am', '3:00am', '3:30am', '4:00am', '4:30am', '5:00am', '5:30am', '6:30am', '7:00am', '7:30am'],
     y = s1,
 
 )
