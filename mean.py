@@ -3,8 +3,8 @@ import plotly.graph_objs as go
 import plotly.plotly as py
 
 plotly.tools.set_credentials_file(
-            username='nachozombie',
-            api_key='ajvmmn1scx'
+            username='SirAngelOfYork',
+            api_key='wSDumMEWX7nHxL6C41UT'
         )
 text_file = open("data.txt", "r")
 lines = text_file.read().split(':')
