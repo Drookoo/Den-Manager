@@ -1,5 +1,4 @@
-import matplotlib.pyplot as plt
-import numpy as np
+
 import plotly
 import plotly.graph_objs as go
 import plotly.plotly as py
@@ -35,7 +34,5 @@ trace = go.Scatter(
     mode = 'markers'
 )
 data = [trace]
-
-
 
 plot_url = py.plot(data, filename='basic-line')
